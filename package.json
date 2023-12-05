@@ -4,6 +4,8 @@
   "description": "Uma Api de usuarios, com o objetivo de cadastro em um app.",
   "main": "index.js",
   "scripts": {
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/index.ts",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node src/index.ts"
   },
@@ -23,9 +25,14 @@
     "@types/node": "^20.10.0",
     "body-parser": "^1.19.0",
     "config": "^3.2.3",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongoose": "^8.0.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "ts-node-dev": "^2.0.0"
   }
 }
